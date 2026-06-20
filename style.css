@@ -1,0 +1,644 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+::selection {
+    background-color: #ffd700;
+    color: #4a2306;
+}
+.innovative-card-container {
+    background: #ffffff !important; /* Pure White Card */
+    border: 1px solid rgba(230, 194, 128, 0.4);
+    border-radius: 20px;
+    padding: 25px;
+    margin: 40px auto;
+    width: 90%;
+    box-shadow: 0 15px 35px rgba(74, 35, 6, 0.08); /* Soft shadow jisse card upar utha hua lage */
+}
+
+/* Jo button active nahi hai, uska color thoda light brown taaki contrast dikhe */
+.tab-btn {
+    background: #fdf5e6;
+    border: 1px solid rgba(230, 194, 128, 0.2);
+    color: #8b5a2b;
+}
+
+body{
+background:linear-gradient(135deg,#fff7e8,#ffe4b5,#fffaf0);
+overflow-x:hidden;
+}
+
+nav{       
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+padding: 20px 8% ;
+background :rgba(255,255,255,.8);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.hero {
+    padding-top: 140px; 
+}
+.hero {
+    background: linear-gradient(135deg, #fdf5e6 0%, #fffaf0 100%); /* Creamy background */
+    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero h1 {
+    font-family: 'Playfair Display', serif; /* Heading ko premium banayein */
+    font-size: 3.5rem;
+    color: #4a2306; /* Deep Brown */
+}
+
+.features{
+    padding-top:20px;
+    margin-top: 0;
+}
+
+.features h1{
+    
+    /*margin-top: 10px;
+    margin-bottom: 15px;
+     --- Crafted with three powerful paragraph style --- 
+
+    color: #433225 !important; /* Jet black hata kar rich soft earth-brown mix rang */
+   
+    color: #722f18 !important; /* Premium charcoal brown */
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;            /* Text ka size thoda bada kiya taaki eye-catching lage */
+    line-height: 1.8;
+    font-weight: 500;
+    text-align: center;         /* 👈 Sabse zaroori: Ise center align kiya taki heading se match kare */
+    max-width: 850px;           /* Text ko dono side se squeeze karke compact banayega */
+    margin: 0 auto 30px auto;   /* Center me alignment lane aur niche cards se gap dene ke liye */
+    letter-spacing: 0.2px;
+}
+
+
+nav h2{
+color:#6b2f00;
+margin: 0;
+padding: 0;
+}
+
+/* Puraane .btn ko isse replace karein */
+.btn {
+    background: linear-gradient(45deg, #ffd700, #ff8c00);
+    padding: 14px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: 0 5px 15px rgba(255, 140, 0, 0.3);
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s;
+    display: inline-block;
+}
+
+.btn:hover {
+    transform: translateY(-4px) scale(1.02); /* Button thoda upar uthega aur bada hoga */
+    box-shadow: 0 10px 25px rgba(255, 140, 0, 0.5);
+}
+
+.btn:active {
+    transform: translateY(-1px); /* Click karne par real button jaisa press hoga */
+}
+
+
+.hero {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #6E2D00; /* Tamra (Copper) Color */
+    background: #FFECE0; /* Sindoor/Saffron soft tint */
+    padding: 8px 18px;
+    border-radius: 25px;
+    border: 1px solid #D97736;
+    letter-spacing: 0.8px;
+    margin-bottom: 25px;
+}
+
+.hero{
+
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:120px 8%;
+}
+
+
+.hero p {
+    font-size: 1.2rem;
+    color: #3d3126;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 35px;
+    /* --- Elegant Highlight for Subtitle --- */
+
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #8b5a2b; /* Premium Matte Brown/Bronze */
+    background: rgba(230, 194, 128, 0.15); /* Halka sa elegant golden tint background */
+    padding: 6px 16px;
+    border-radius: 20px; /* Capsule jaisa soft round shape */
+    border: 1px solid rgba(230, 194, 128, 0.4); /* Light gold border */
+    letter-spacing: 0.5px;
+    margin-bottom: 25px; /* Buttons se thoda gap rakhne ke liye */
+    text-transform: uppercase; /* Professional look ke liye caps */
+}
+
+
+
+.hero-text{
+flex:1;
+}
+
+.hero h1{
+font-size:4rem;
+color:#6b2f00;
+line-height:1.2;
+}
+
+.hero p{
+font-size:1.2rem;
+margin:20px 0;
+}
+
+.hero-buttons{
+display:flex;
+gap:15px;
+}
+
+.btn{
+background:linear-gradient(45deg,#FFD700,#FF9800);
+padding:15px 35px;
+border-radius:50px;
+text-decoration:none;
+color:#222;
+font-weight:bold;
+box-shadow:0 0 25px rgba(255,215,0,.4);
+}
+/* Primary Button Optimization */
+.btn {
+    background: linear-gradient(45deg, #ffd700, #ff8c00);
+    padding: 16px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    box-shadow: 0 8px 20px rgba(255, 140, 0, 0.3);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(255, 140, 0, 0.5);
+}
+
+.btn-outline{
+padding:15px 35px;
+border:2px solid #6b2f00;
+border-radius:50px;
+text-decoration:none;
+color:#6b2f00;
+}
+
+.hero-image{
+flex:1;
+text-align:center;
+}
+/* Hero Image Styling */
+.hero-image img {
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15), 
+                0 0 25px rgba(230, 194, 128, 0.2); /* Soft Golden Aura around product */
+    transition: transform 0.5s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.03) rotate(1deg); /* Subtle micro-interaction on hover */
+}
+.coin{
+margin-top: 10px;
+max-width:450px;
+width:100%;
+animation:float 4s ease-in-out infinite;
+}
+/* Keyframes float ko isse replace karein */
+@keyframes float {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-15px) rotate(1deg); /* Halka sa tilt aur upar */
+    }
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+.coin-specs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fdf5e6;
+    border: 1px solid #e6c280;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+    box-sizing: border-box;
+}
+/* --- Trust Bar Styling --- */
+.trust-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    border-top: 1px solid rgba(230, 194, 128, 0.4);
+    border-bottom: 1px solid rgba(230, 194, 128, 0.4);
+    padding: 20px 8%;
+    gap: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.trust-icon {
+    font-size: 28px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+.trust-text {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+.trust-text strong {
+    font-size: 14px;
+    color: #4a2306; /* Deep Brown color */
+    font-weight: 600;
+}
+
+.trust-text small {
+    font-size: 12px;
+    color: #777;
+    margin-top: 2px;
+}
+
+/* Mobile responsive karne ke liye */
+@media (max-width: 768px) {
+    .trust-bar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
+        gap: 15px;
+    }
+}
+.coin-specs-container {
+    background: #fdf5e6;
+    border: 1px solid #e6c280;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 25px auto;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 4px 15px rgba(74, 35, 6, 0.03);
+}
+
+.coin-specs-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.spec-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.spec-icon {
+    width: 18px;
+    height: 18px;
+    stroke: #6b2f00;
+}
+
+.spec-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.spec-label {
+    font-size: 10px;
+    color: #777;
+    text-transform: uppercase;
+}
+
+.spec-value {
+    font-size: 14px;
+    color: #6b2f00;
+    font-weight: bold;
+}
+
+.trust-compact-row {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    border-top: 1px dashed rgba(230, 194, 128, 0.6);
+    font-size: 12px;
+    color: #555;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+@media (max-width: 600px) {
+    .coin-specs-row, .trust-compact-row {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+        padding-left: 10%;
+    }
+}
+
+.spec-item {
+    display: flex;
+    align-items: center; /* Icons aur text ko aamne-saamne lane ke liye */
+    gap:   15px;       /* Icon aur text ke beech ka space */
+    font-family: Arial, sans-serif;
+}
+
+.spec-icon {
+    width: 24px;         /* Icon ki width */
+    height: 24px;        /* Icon ki height */
+    stroke: #6b2f00;     /* Aapki theme ka brown color */
+}
+
+.spec-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.spec-label {
+    font-size: 15px;
+    color: #777;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+.spec-value {
+    font-size: 15px;
+    color: #6b2f00;
+    font-weight: bold;
+}
+@keyframes float{
+0%,100%{
+transform:translateY(0);
+}
+50%{
+transform:translateY(-20px);
+}
+}
+
+section{
+padding:100px 8%;
+}
+
+h2{
+text-align:center;
+font-size:2.5rem;
+color:#6b2f00;
+margin-bottom:50px;
+}
+.spiritual-banner { margin-top: 10px;margin-bottom: 5px;padding-top: 15px;padding-bottom: 15px; background: linear-gradient(135deg, #fffbf5 0%, #f7ebd3 100%); padding: 30px 20px; text-align: center; border-top: 1px solid rgba(230, 194, 128, 0.3); border-bottom: 1px solid rgba(230, 194, 128, 0.3); margin: 30px 0; }
+.banner-quote { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: bold; color: #722f18; font-style: italic; margin-bottom: 5px; }
+.banner-sub { font-size: 20px; color: #5c320f; margin: 0; font-weight: 500; }
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,.25);
+backdrop-filter:blur(12px);
+padding:30px;
+border-radius:25px;
+text-align:center;
+font-size:1.2rem;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 25px rgba(0,0,0,.15);
+}
+
+.product-images{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.product-images img{
+width:320px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+/* --- Premium 3-Card Grid Style --- */
+.reviews-grid-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap; /* Mobile par automatic ek ke niche ek aa jayenge */
+    max-width: 1200px;
+    margin: 20px auto 40px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.premium-review-card {
+    background: #ffffff;
+    border: 1px solid rgba(230, 194, 128, 0.4); /* Soft gold-tint border */
+    border-radius: 16px;
+    padding: 25px;
+    flex: 1;
+    min-width: 280px; /* Mobile rendering ke liye minimum scale */
+    max-width: 350px;
+    box-shadow: 0 10px 25px rgba(74, 35, 6, 0.04); /* Soft luxury shadow */
+    text-align: left; /* Text professional lagega */
+    transition: transform 0.3s ease;
+}
+
+/* Hover karne par card halka sa lift hoga */
+.premium-review-card:hover {
+    transform: translateY(-5px);
+}
+
+.review-stars {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.review-quote {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #5c320f; /* Aapka pasandida warm deep brown */
+    line-height: 1.6;
+    margin: 0 0 15px 0;
+}
+
+.reviewer-info strong {
+    display: block;
+    font-size: 14px;
+    color: #321600;
+    font-weight: 600;
+}
+
+.reviewer-info span {
+    font-size: 11px;
+    color: #b8860b; /* Golden green variant for verification badge */
+    font-weight: 500;
+}
+
+.faq-item{
+max-width:800px;
+margin:15px auto;
+}
+
+.faq-btn{
+width:100%;
+padding:18px;
+font-size:18px;
+border:none;
+background:#6b2f00;
+color:white;
+cursor:pointer;
+border-radius:10px;
+}
+
+.faq-content{
+display:none;
+padding:15px;
+background:white;
+}
+
+.cta{
+text-align:center;
+background:linear-gradient(135deg,#6b2f00,#d4af37);
+color:white;
+}
+
+.whatsapp{
+display:inline-block;
+background:#25D366;
+padding:15px 35px;
+border-radius:50px;
+color:white;
+text-decoration:none;
+margin-left:15px;
+}
+
+footer{
+background:#3b240b;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:768px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero h1{
+font-size:2.5rem;
+}
+
+.hero-buttons{
+justify-content:center;
+}
+
+}
+.dark-section {
+    background: linear-gradient(135deg, #321600 0%, #1c0d00 100%) !important; /* Dark Luxury Theme */
+    color: #f5edd6 !important; /* Soft Cream Text */
+    padding: 60px 10%;
+    border-radius: 0; /* Ya phir rounded corners de sakte hain */
+}
+
+.dark-section h2, .dark-section h3 {
+    color: #ffcc00 !important; /* Gold headings */
+}
+/* Purane poore CSS code ko hata kar ye naya lagayein */
+.spiritual-watermark-section {
+  position: relative;
+  width: 100%;
+  height: 280px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: transparent; 
+}
+
+.watermark-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px; 
+  height: 280px;
+  
+  /* Yeh 100% safe format hai jo ab browser crash nahi karega aur solid dark brown line dikhayega */
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBzdHJva2U9IiM1QzNBMjEiIHN0cm9rZS13aWR0aD0iMS4yIiBmaWxsPSJub25lIj48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI0NSIvPjxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjM1Ii8+PGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iMjUiLz48cG9seWdvbiBwb2ludHM9IjUwLDUgOTUsNTAgNTAsOTUgNSw1MCIvPjxwb2x5Z29uIHBvaW50cz0iNTAsMTUgODUsNTAgNTAsODUgMTUsNTAiLz48cGF0aCBkPSJNNTAsNSBRNzUsMjUgOTUsNTAgUTc1LDc1IDUwLDk1IFFyNSw3NSA1LDUwIFFyNSwyNSA1MCw1IFoiLz48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI1IiBmaWxsPSIjNUMzQTIxIi8+PC9zdmc+');
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.6 !important; /* Agar aur dark karna ho toh ise 0.8 ya 1 kar sakti hain */
+  z-index: 1 !important;
+  pointer-events: none; 
+}
+
+.section-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.subtle-divider {
+  font-size: 16px;
+  color: #5C3A21; 
+  opacity: 0.7;
+  letter-spacing: 6px;
+}
