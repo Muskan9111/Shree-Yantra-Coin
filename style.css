@@ -1212,3 +1212,9 @@ img[src*="coins with stand"], .Coin, .Yantra, .Shree {
         margin: 20px auto !important;
     }
 }
+body {
+    border-left: 5px solid #d4af37;  /* Gold color jo aapki theme se match karega */
+    border-right: 5px solid #d4af37;
+    min-height: 100vh; /* Border ko niche tak stretch karne ke liye */
+    margin: 0;
+}
