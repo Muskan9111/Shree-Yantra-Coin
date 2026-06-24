@@ -1194,3 +1194,21 @@ div[class*="card"]:active img, div[class*="box"]:active i, div[class*="box"]:act
         height: 24px !important;
     }
 }
+/* Coin ki badi image ko sahi size mein fit aur center karne ke liye */
+img[src*="coins with stand"], .Coin, .Yantra, .Shree {
+    display: block !important;
+    max-width: 100% !important;
+    width: 450px !important;      /* Isse image ka size chota aur perfect ho jayega */
+    height: auto !important;
+    margin: 40px auto !important;  /* Isse image bilkul center (beech) mein aa jayegi */
+    border-radius: 12px;           /* Corners par halka sa roundness premium look ke liye */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Niche halki shadow */
+}
+
+/* Mobile screen ke liye automatic chota karne ka code */
+@media (max-width: 768px) {
+    img[src*="coins with stand"], .Coin, .Yantra, .Shree {
+        width: 90% !important;     /* Mobile par screen ke hisab se auto-fit ho jayegi */
+        margin: 20px auto !important;
+    }
+}
