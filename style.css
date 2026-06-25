@@ -459,24 +459,28 @@ nav a {
     left: 0;
     width: 100%;
     background: #fff;
-    padding: 10px 15px;
+    padding:  0px;
     box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
     z-index: 999;
 }
 
-.sticky-mobile-cta a {
-    background: #25d366;
-    color: #fff;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 12px;
-    border-radius: 8px;
-    font-weight: 700;
-    font-size: 16px;
+ .sticky-mobile-cta a {
+    background: #25d366;      /* Green color */
+    color: #fff;              /* White text color */
+    text-decoration: none;    /* Underline hatane ke liye */
+    
+    /* ---- YE CODES PURA LINE MEIN KARNE KE LIYE HAIN ---- */
+    display: flex;            
+    width: 100%;             /* Isse button left se right poori line cover karega */
+    justify-content: center;  /* Isse "Buy Now" text bilkul center (beech) mein aa jayega */
+    align-items: center;      
+    
+    /* ---- BUTTON KO ACCHA LOOK DENE KE LIYE (OPTIONAL) ---- */
+    padding: 12px 0;         /* Button ki height badhane ke liye padding */
+    border-radius: 5px;      /* Corners ko halka round rakhne ke liye */
+    font-weight: bold;       /* Text ko thoda mota/bold karne ke liye */
 }
+
 
 /* --- Footer --- */
 footer {
