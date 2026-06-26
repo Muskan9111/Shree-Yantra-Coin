@@ -231,11 +231,49 @@ nav a {
     margin-top: 8px;
 }
 
-.section-cta {
+/* .section-cta {
     display: flex;
     justify-content: center;
     margin-top: 35px;
+} */
+ /* Container styling */
+.section-cta {
+    text-align: center;
+    margin: 40px auto 20px auto;
+    width: 100%;
 }
+    /* WhatsApp Golden Pill Shape Button */
+/* Direct class ko target kiya taaki baki section-cta par asar na pade */
+.whatsapp-golden-btn {
+    display: inline-block !important;
+    background-color: #e1b72e !important; /* Neeche wale button ka exact same golden color */
+    color: #000000 !important; /* Text aur icon ka color pure black */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 700 !important; /* Bold text */
+    padding: 14px 50px !important; /* Capsule/Pill shape padding */
+    border-radius: 50px !important; /* Poora capsule round shape */
+    text-decoration: none !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05) !important;
+    transition: all 0.3s ease !important;
+}
+
+/* WhatsApp Icon styling */
+.whatsapp-golden-btn i {
+    margin-right: 8px !important;
+    font-size: 18px !important;
+    color: #000000 !important;
+    display: inline-block !important;
+}
+
+/* Hover Effect: Mouse le jane par halka sa dark gold */
+.whatsapp-golden-btn:hover {
+    background-color: #cf9f1b !important;
+    transform: translateY(-2px) !important;
+    color: #000000 !important;
+}
+
+
 
 /* --- Shree Yantra Photo Details Section --- */
 .yantra-details {
@@ -1222,3 +1260,120 @@ body {
     min-height: 100vh; /* Border ko niche tak stretch karne ke liye */
     margin: 0;
 }
+/* Final CTA Section ka background color thoda dark blue set karne ke liye (agar pehle se nahi hai) */
+.final-cta {
+    background-color: #0b132b; /* Dark Blue/Navy Background */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.final-cta h2 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.final-cta p {
+    color: #e0e0e0;
+    margin-bottom: 30px;
+}
+
+/* Razorpay Button Styling - Jo Blue par ekdum khil ke dikhega */
+.razorpay-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #ffd700, #b38600); /* Premium Gold Gradient */
+    color: #000000 !important; /* Text poora black taaki saaf dikhe */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700; /* Bold Text */
+    padding: 15px 45px;
+    border-radius: 30px; /* Pill shape button */
+    box-shadow: 0 5px 20px rgba(255, 215, 0, 0.4); /* Gold Glow Effect */
+    transition: all 0.3s ease;
+    text-transform: uppercase; /* Bade akshar (Capital Letters) */
+    letter-spacing: 1px;
+}
+
+/* Hover Effect (Jab mouse button par jayega) */
+.razorpay-btn:hover {
+    background: linear-gradient(135deg, #ffffff, #ffd700); /* Aur zyada bright ho jayega */
+    transform: translateY(-3px); /* Button thoda upar uthega */
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.7); /* Glow badh jayega */
+    color: #000000 !important;
+}
+
+/* FAQ Section Outer Styling */
+.faq-section {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+
+.faq-accordion {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Har question ka safed box */
+.faq-item {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+    transition: all 0.3s ease;
+}
+
+/* Jab box open ho toh gold border aur shadow aaye */
+.faq-item.active {
+    border-color: #b38600;
+    box-shadow: 0 4px 12px rgba(179, 134, 0, 0.1);
+}
+
+.faq-question {
+    font-size: 17px;
+    font-weight: 600;
+    color: #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.faq-question i {
+    color: #b38600;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+/* Shuruat me details/answers chhupe rahenge */
+.faq-answer {
+    display: none;
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.6;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eeeeee;
+}
+
+/* Jab item par click hoga aur active class milegi, tab answer dikhega */
+.faq-item.active .faq-answer {
+    display: block !important;
+}
+
+/* Open hone par plus icon ghum kar minus jaisa dikhega */
+.faq-item.active .faq-question i {
+    transform: rotate(45deg);
+    color: #333333;
+}
+/* Section CTA container ko center karne ke liye */
+.section-cta {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
