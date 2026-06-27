@@ -439,36 +439,25 @@ nav a {
     font-size: 13px;
 }
 
-/* --- FAQ Section --- */
-.faq {
-    padding: 40px 0;
-    background: #fafafa;
-}
-
-.faq-item {
-    background: white;
-    border: 1px solid #e5e7eb;
-    margin-bottom: 10px;
-    border-radius: 6px;
-}
-
-.faq-question {
-    padding: 15px;
-    font-weight: 600;
-    font-size: 14px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
+/* Default state: Answer hidden rahega */
 .faq-answer {
-    padding: 0 15px;
-    max-height: 0;
-    overflow: hidden;
-    color: var(--text-light);
-    font-size: 13px;
-    transition: max-height 0.3s ease;
+    display: none;
+    padding: 10px 0;
+}
+
+/* Jab faq-item active hoga, tab answer dikhega */
+.faq-item.active .faq-answer {
+    display: block;
+}
+.faq-item.active .fa-plus {
+    transform: none !important;
+}
+
+/* Optional: Plus icon ko minus mein badalne ke liye (agar aap chahein) */
+.faq-item.active .fa-plus::before {
+    content: "\f067"; /* FontAwesome minus icon ka code */
+    font-family: "font Awesome 5 Free","Font Awesome 6 Free",sans-serif;
+    font-weight: bold;
 }
 
 /* --- Final CTA Section --- */
